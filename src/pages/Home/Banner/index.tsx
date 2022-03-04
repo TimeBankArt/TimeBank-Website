@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Button from '../Button';
 import styles from './index.less';
 
 const Banner = () => {
@@ -76,6 +77,7 @@ const Banner = () => {
   }`;
   return (
     <div className={styles.banner}>
+      <Button />
       <css-doodle>{rule}</css-doodle>
     </div>
   );
