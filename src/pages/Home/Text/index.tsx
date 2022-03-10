@@ -14,7 +14,6 @@ const Roadmap = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel
             sapien elit in malesuada semper mi.
           </cite>
-          <span id="replay">Replay</span>
           <a
             id="dex-sign"
             className="play"
