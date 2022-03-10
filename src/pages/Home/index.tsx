@@ -9,7 +9,7 @@ import Footer from './Footer';
 export default function IndexPage() {
   return (
     <div>
-      {/* <Time /> */}
+      {/* <Time /> */} 
       <Banner />
       <Text />
       <World />
