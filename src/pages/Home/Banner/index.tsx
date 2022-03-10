@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Button from '../Button';
-import { ReactComponent as TimeBank } from "@/accets/TimeBank.svg";
+import { ReactComponent as TimeBank } from "../../../accets/TimeBank.svg";
 import styles from './index.less';
 
 const Banner = () => {
