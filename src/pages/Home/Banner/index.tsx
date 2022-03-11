@@ -83,8 +83,10 @@ const Banner = () => {
       </div>
       <css-doodle>{rule}</css-doodle>
       <div className={styles.btn}>
-        <Button />
+       <a target={'_blank'} href='https://app.timebank.art/'>
+       <Button />
 
+         </a> 
       </div>
     </div>
   );

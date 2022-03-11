@@ -57,15 +57,6 @@ const Roadmap = () => {
             </div>
           </div>
         </div>
-
-        <div className="page">
-          <h4>Hover the card</h4>
-          <ul><li> {`<<<`} </li>
-
-            <li> {`>>>`} </li>
-          </ul>
-        </div>
-
       </div>
     </div>
   );

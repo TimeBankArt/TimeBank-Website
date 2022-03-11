@@ -1,4 +1,6 @@
 .footer {
+  background-color: #000;
+
   :global {
     //autoprefixer & reset used
     //Tested on Chrome, Firefox, IE11, and iOS.  The responsiveness & the social section is a bit off on IE11.  I'm looking to fix that.
@@ -9,6 +11,10 @@
 
     * {
       box-sizing: border-box;
+    }
+
+    footer {
+      background-color: #000 !important;
     }
 
     html,
@@ -59,7 +65,7 @@
       align-items: center;
       justify-content: center;
       font: 10em 'Oswald', sans-serif;
-      color: rgb(155, 155, 155);
+      color: #000;
       line-height: 1;
     }
 
@@ -73,7 +79,7 @@
       width: 33.333%;
     }
 
-    .footer-list-top > li {
+    .footer-list-top>li {
       text-align: center;
       padding-bottom: 10px;
     }
@@ -125,11 +131,11 @@
       padding: 0px 20px;
     }
 
-    .footer-social-overlap > a {
+    .footer-social-overlap>a {
       font-size: 3em;
     }
 
-    .footer-social-overlap > a:not(:first-child) {
+    .footer-social-overlap>a:not(:first-child) {
       margin-left: 0.38em;
     }
 
@@ -140,7 +146,7 @@
       margin-top: 10px;
     }
 
-    .footer-bottom-section > div:first-child {
+    .footer-bottom-section>div:first-child {
       margin-right: auto;
     }
 
@@ -167,7 +173,7 @@
         font-size: 2.5em;
       }
 
-      .footer-social-overlap > a {
+      .footer-social-overlap>a {
         font-size: 2.24em;
       }
 
@@ -216,7 +222,7 @@
         padding: 0;
       }
 
-      .footer-social-overlap > a:not(:first-child) {
+      .footer-social-overlap>a:not(:first-child) {
         margin-left: 20px;
       }
 
@@ -232,11 +238,11 @@
     }
 
     @media only screen and (max-width: 480px) {
-      .footer-social-overlap > a {
+      .footer-social-overlap>a {
         margin: auto;
       }
 
-      .footer-social-overlap > a:not(:first-child) {
+      .footer-social-overlap>a:not(:first-child) {
         margin-left: 0;
       }
 
@@ -258,7 +264,7 @@
         font-size: 2.4em;
       }
 
-      .footer-social-overlap > a {
+      .footer-social-overlap>a {
         font-size: 2.24em;
       }
 

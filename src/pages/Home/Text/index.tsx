@@ -7,19 +7,17 @@ const Roadmap = () => {
   return (
     <div className={styles.banner}>
       <section>
-        <Time />
 
         <div className="quote">
           <cite>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel
             sapien elit in malesuada semper mi.
           </cite>
-          <a
-            id="dex-sign"
-            className="play"
-            href="http://drygiel.com"
-            target="_blank"
-          ></a>
+
+        </div>
+        <div style={{textAlign:'center'}}>
+        <Time />
+
         </div>
         <Singer />
       </section>

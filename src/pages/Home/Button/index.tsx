@@ -8,7 +8,7 @@ const Roadmap = () => {
   return (
     <div className={styles.banner}>
     <div className="buttons">
-    <button className="btn-hover color-1">BUTTON</button>
+    <button className="btn-hover color-1">GET STARTED</button>
     </div>
     </div>
   );
