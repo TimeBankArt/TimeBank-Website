@@ -1,0 +1,132 @@
+.banner {
+  font-family:'Cedarville';
+  :global {
+    :root {
+      --img-bg: url("https://assets.codepen.io/64141/jason-bg.jpeg");
+    }
+    
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: #171321;
+    }
+    
+    svg {
+      aspect-ratio: 1440 / 960;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+    
+    clipPath {
+      /*
+       * To be responsive, clip-paths need to be on a scale 
+       * of 0–1. However, Figma exports with absolute values 
+       * based on the canvas size. To work around this, we 
+       * scale the clipping path down — this is a bit of a 
+       * hack, but it behaves the same as having the values
+       * between 0–1.
+       *
+       * This solution is based on a StackOverflow answer:
+       * https://stackoverflow.com/q/31210466
+       */
+      transform: scale(calc(1 / 1440), calc(1 / 960));
+    }
+    
+    svg {
+      height: 0;
+      width: 0;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+    
+    h1 {
+      color: #171321;
+      font-family: mallory ultra, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 12vw;
+      line-height: 0.8;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin: 3rem auto 0;
+      position: relative;
+      width: 90%;
+      z-index: 90;
+      mix-blend-mode: hard-light;
+    }
+    
+    .container {
+      background: white;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 1440 / 1100;
+      width: 100%;
+    }
+    
+    .cutout {
+      bottom: 0;
+      display: block;
+      position: absolute;
+      z-index: 100;
+    }
+    
+    .main,
+    .stripes,
+    .leftTriangle,
+    .rightTriangle {
+      aspect-ratio: 1440 / 960;
+      background-image: var(--img-bg);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index: 10;
+    }
+    
+    .main {
+      -webkit-clip-path: url(#dots);
+      clip-path: url(#dots);
+      filter: url(#grey);
+      z-index: 5;
+    }
+    
+    .stripes {
+      -webkit-clip-path: url(#stripes);
+      clip-path: url(#stripes);
+      filter: url(#pink);
+      z-index: 2;
+    }
+    
+    .leftTriangle {
+      -webkit-clip-path: url(#leftTriangle);
+      clip-path: url(#leftTriangle);
+      filter: url(#pink);
+    }
+    
+    .rightTriangle {
+      -webkit-clip-path: url(#rightTriangle);
+      clip-path: url(#rightTriangle);
+      filter: url(#blue);
+      z-index: 1;
+    }
+  }
+}

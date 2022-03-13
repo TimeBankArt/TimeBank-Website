@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Time from '../Time';
 import Singer from '../Singer';
+import SvgHead from '../SvgHead';
 import styles from './index.less';
 
 const Roadmap = () => {
@@ -10,16 +11,16 @@ const Roadmap = () => {
 
         <div className="quote">
           <cite>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel
-            sapien elit in malesuada semper mi.
+            Timebank creates cutting-edge art with cutting-edge technology.
           </cite>
 
         </div>
-        <div style={{textAlign:'center'}}>
-        <Time />
+        <div style={{ textAlign: 'center' }}>
+          <Time />
 
         </div>
         <Singer />
+        <SvgHead />
       </section>
     </div>
   );
