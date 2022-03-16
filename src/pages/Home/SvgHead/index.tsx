@@ -4,21 +4,21 @@ import Singer from '../Singer';
 import styles from './index.less';
 
 const Roadmap = () => {
-  useEffect(()=>{
-    gsap.to(["h1", "clipPath"], {
+  useEffect(() => {
+    gsap.to([".h1n", "clipPath"], {
       scrollTrigger: {
         scrub: true
       },
-      y: (i, target) => (-window.outerHeight) * target.dataset.speed,
+      y: (i, target) => (-window.outerHeight/4 ) * target.dataset.speed,
       x: (i, target) =>
         parseFloat(target.dataset.drift ?? 0) * -window.outerWidth,
       ease: "none"
     });
-  },[]);
+  }, []);
   return (
-    <div className={styles.banner}>
+    <div className={styles.bannertext}>
       <div className="container">
-        <h1 data-speed="-0.1">Get booped on the brain.</h1>
+        <h1 className="h1n" data-speed="-0.1">Get booped on the brain.</h1>
         <img src="https://assets.codepen.io/64141/jason-cutout.png" alt="Jason Lengstorf cutout" className="cutout" />
         <span className="main"></span>
         <span className="leftTriangle"></span>
