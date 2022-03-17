@@ -4,10 +4,10 @@ import { ReactComponent as S2 } from "./2.svg";
 import { ReactComponent as S3 } from "./3.svg";
 import styles from './index.less';
 
-const Roadmap = () => {
+const Roadmap = (props:any) => {
 
   return (
-    <div className={styles.banner}>
+    <div className={styles.banner} {...props}>
       <div className="wrapper">
 
         <div className="container" id="c0">
@@ -57,6 +57,7 @@ const Roadmap = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

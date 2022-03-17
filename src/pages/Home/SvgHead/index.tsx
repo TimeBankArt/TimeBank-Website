@@ -9,7 +9,7 @@ const Roadmap = () => {
       scrollTrigger: {
         scrub: true
       },
-      y: (i, target) => (-window.outerHeight/4 ) * target.dataset.speed,
+      y: (i, target) => (-window.screen.height) * target.dataset.speed,
       x: (i, target) =>
         parseFloat(target.dataset.drift ?? 0) * -window.outerWidth,
       ease: "none"

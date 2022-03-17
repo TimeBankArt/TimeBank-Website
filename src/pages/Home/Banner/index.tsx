@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Button from '../Button';
+import Time from '../Time';
 import { ReactComponent as TimeBank } from "@/accets/TimeBank.svg";
 import styles from './index.less';
 
@@ -80,6 +81,7 @@ const Banner = () => {
     <div className={styles.banner}>
       <div className={styles.logo}>
         <TimeBank style={{width:'200px'}}/>
+        {/* <Time /> */}
       </div>
       <css-doodle>{rule}</css-doodle>
       <div className={styles.btn}>

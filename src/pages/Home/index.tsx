@@ -11,8 +11,8 @@ export default function IndexPage() {
     <div>
       {/* <Time /> */} 
       <Banner />
-      <Text />
       <World />
+      <Text />
       <Chart />
       <Footer />
     </div>

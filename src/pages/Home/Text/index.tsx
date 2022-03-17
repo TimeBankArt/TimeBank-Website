@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Time from '../Time';
 import Singer from '../Singer';
 import SvgHead from '../SvgHead';
 import styles from './index.less';
@@ -15,11 +14,11 @@ const Roadmap = () => {
           </cite>
 
         </div>
-        <div style={{ textAlign: 'center' }}>
+        {/* <div style={{ textAlign: 'center' }}>
           <Time />
 
-        </div>
-        <Singer />
+        </div> */}
+        {/* <Singer /> */}
         <SvgHead />
       </section>
     </div>
