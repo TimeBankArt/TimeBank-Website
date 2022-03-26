@@ -19,7 +19,7 @@ const Roadmap = () => {
     <div className={styles.bannertext}>
       <div className="container">
         <h1 className="h1n" data-speed="-0.1">Get booped on the brain.</h1>
-        <img src="https://assets.codepen.io/64141/jason-cutout.png" alt="Jason Lengstorf cutout" className="cutout" />
+        <img src="/wkl.jpg" alt="Jason Lengstorf cutout" className="cutout" />
         <span className="main"></span>
         <span className="leftTriangle"></span>
         <span className="stripes"></span>

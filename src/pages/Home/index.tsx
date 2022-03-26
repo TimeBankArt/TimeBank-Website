@@ -4,7 +4,11 @@ import Time from './Time';
 import Text from './Text';
 import World from './World';
 import Roadmap from './Roadmap';
+import Network from './Network';
 import Chart from './Chart';
+import Glitchclock from './Glitchclock';
+import Box from './Box';
+
 import Footer from './Footer';
 export default function IndexPage() {
   return (
@@ -15,6 +19,9 @@ export default function IndexPage() {
       <Text />
       <Chart />
       <Footer />
+      <Network />
+      <Glitchclock />
+      <Box />
     </div>
   );
 }
