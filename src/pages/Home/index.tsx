@@ -19,9 +19,9 @@ export default function IndexPage() {
       <Text />
       <Chart />
       <Footer />
-      <Network />
+      {/* <Network />
       <Glitchclock />
-      <Box />
+      <Box /> */}
     </div>
   );
 }

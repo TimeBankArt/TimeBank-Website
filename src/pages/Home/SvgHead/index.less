@@ -1,12 +1,14 @@
 @import '../../../global.less';
+
 .bannertext {
-  font-family:'Cedarville';
+  font-family: 'Cedarville';
   background: @defaultbg;
+
   :global {
     :root {
       --img-bg: url("https://assets.codepen.io/64141/jason-bg.jpeg");
     }
-    
+
     *,
     *::after,
     *::before {
@@ -14,11 +16,11 @@
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       background: #171321;
     }
-    
+
     svg {
       aspect-ratio: 1440 / 960;
       position: absolute;
@@ -27,7 +29,7 @@
       height: auto;
       width: 100%;
     }
-    
+
     clipPath {
       /*
        * To be responsive, clip-paths need to be on a scale 
@@ -42,17 +44,17 @@
        */
       transform: scale(calc(1 / 1440), calc(1 / 960));
     }
-    
+
     svg {
       height: 0;
       width: 0;
     }
-    
+
     img {
       display: block;
-      width: 100%;
+      height: 100%;
     }
-    
+
     h1 {
       color: #171321;
       font-family: mallory ultra, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -70,7 +72,7 @@
       z-index: 90;
       mix-blend-mode: hard-light;
     }
-    
+
     .container {
       background: white;
       margin: 0 auto;
@@ -79,20 +81,20 @@
       aspect-ratio: 1440 / 1100;
       width: 100%;
     }
-    
+
     .cutout {
       bottom: 0;
       display: block;
-      position: absolute;
       z-index: 100;
+      margin: auto;
     }
-    
+
     .main,
     .stripes,
     .leftTriangle,
     .rightTriangle {
       aspect-ratio: 1440 / 960;
-      background-image:url('https://assets.codepen.io/64141/jason-bg.jpeg') ;
+      background-image: url('https://assets.codepen.io/64141/jason-bg.jpeg');
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -103,27 +105,27 @@
       position: absolute;
       z-index: 10;
     }
-    
+
     .main {
       -webkit-clip-path: url(#dots);
       clip-path: url(#dots);
       filter: url(#grey);
       z-index: 5;
     }
-    
+
     .stripes {
       -webkit-clip-path: url(#stripes);
       clip-path: url(#stripes);
       filter: url(#pink);
       z-index: 2;
     }
-    
+
     .leftTriangle {
       -webkit-clip-path: url(#leftTriangle);
       clip-path: url(#leftTriangle);
       filter: url(#pink);
     }
-    
+
     .rightTriangle {
       -webkit-clip-path: url(#rightTriangle);
       clip-path: url(#rightTriangle);

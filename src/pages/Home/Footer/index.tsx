@@ -78,7 +78,7 @@ const Footer = () => {
         </ul>
         <section class="footer-bottom-section flex-rw">
           <div class="footer-bottom-wrapper">
-            <i class="fa fa-copyright" role="copyright"></i> 2019 Pavilion in{' '}
+            <i class="fa fa-copyright" role="copyright"></i> 2022 Pavilion in{' '}
             <address class="footer-address" role="company address">
               Bergen, NY
             </address>
