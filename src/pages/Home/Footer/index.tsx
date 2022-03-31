@@ -4,15 +4,15 @@ import styles from './index.less';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <footer class="flex-rw">
-        <ul class="footer-list-top">
+      <footer className="flex-rw">
+        <ul className="footer-list-top">
           <li>
-            <h4 class="footer-list-header">About Pavilion</h4>
+            <h4 className="footer-list-header">About Pavilion</h4>
           </li>
           <li>
             <a
               href="/shop/about-mission"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
               itemprop="significantLink"
             >
               GET TO KNOW US
@@ -21,7 +21,7 @@ const Footer = () => {
           <li>
             <a
               href="/promos.html"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
               itemprop="significantLink"
             >
               PROMOS
@@ -29,15 +29,15 @@ const Footer = () => {
           </li>
           
         </ul>
-        <ul class="footer-list-top">
+        <ul className="footer-list-top">
           <li>
-            <h4 class="footer-list-header">The Gift Selection</h4>
+            <h4 className="footer-list-header">The Gift Selection</h4>
           </li>
 
           <li>
             <a
               href="/Angels/cat/id/70"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
             >
               ANGEL FIGURINES
             </a>
@@ -45,21 +45,21 @@ const Footer = () => {
           <li>
             <a
               href="/Home-Decor/cat/id/64"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
             >
               HOME DECOR
             </a>
           </li>
           
         </ul>
-        <ul class="footer-list-top">
+        <ul className="footer-list-top">
           <li id="help">
-            <h4 class="footer-list-header">Please Help Me</h4>
+            <h4 className="footer-list-header">Please Help Me</h4>
           </li>
           <li>
             <a
               href="/shop/about-contact"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
               itemprop="significantLink"
             >
               CONTACT
@@ -68,7 +68,7 @@ const Footer = () => {
           <li>
             <a
               href="/faq.html"
-              class="generic-anchor footer-list-anchor"
+              className="generic-anchor footer-list-anchor"
               itemprop="significantLink"
             >
               FAQ
@@ -76,22 +76,22 @@ const Footer = () => {
           </li>
           
         </ul>
-        <section class="footer-bottom-section flex-rw">
-          <div class="footer-bottom-wrapper">
-            <i class="fa fa-copyright" role="copyright"></i> 2022 Pavilion in{' '}
-            <address class="footer-address" role="company address">
+        <section className="footer-bottom-section flex-rw">
+          <div className="footer-bottom-wrapper">
+            <i className="fa fa-copyright" role="copyright"></i> 2022 Pavilion in{' '}
+            <address className="footer-address" role="company address">
               Bergen, NY
             </address>
-            <span class="footer-bottom-rights"> - All Rights Reserved - </span>
+            <span className="footer-bottom-rights"> - All Rights Reserved - </span>
           </div>
-          <div class="footer-bottom-wrapper">
-            <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">
+          <div className="footer-bottom-wrapper">
+            <a href="/terms-of-use.html" className="generic-anchor" rel="nofollow">
               Terms
             </a>{' '}
             |{' '}
             <a
               href="/privacy-policy.html"
-              class="generic-anchor"
+              className="generic-anchor"
               rel="nofollow"
             >
               Privacy
