@@ -80,16 +80,16 @@ const Banner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.logo}>
-        <TimeBank style={{width:'200px'}}/>
+        <TimeBank style={{ width: '200px' }} />
         {/* <Time /> */}
       </div>
       <css-doodle>{rule}</css-doodle>
-      <div className={styles.btn}>
-       <a target={'_blank'} href='https://app.timebank.art/'>
-       <Button />
+      {/* <div className={styles.btn}>
+        <a target={'_blank'} href='https://app.timebank.art/'>
+          <Button />
 
-         </a> 
-      </div>
+        </a>
+      </div> */}
     </div>
   );
 };

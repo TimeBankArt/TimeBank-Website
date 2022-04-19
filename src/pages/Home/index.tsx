@@ -16,7 +16,7 @@ export default function IndexPage() {
       {/* <Time /> */} 
       <Banner />
       <World />
-      <Text />
+      {/* <Text /> */}
       <Chart />
       <Footer />
       {/* <Network />
